@@ -6,5 +6,6 @@ target 'octaATM' do
   use_frameworks!
 
   # Pods for octaATM
-
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 end

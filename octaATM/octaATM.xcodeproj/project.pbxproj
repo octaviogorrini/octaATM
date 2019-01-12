@@ -12,6 +12,7 @@
 		5C7479D521DEE0FF001BE418 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7479D321DEE0FF001BE418 /* Main.storyboard */; };
 		5C7479D721DEE100001BE418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7479D621DEE100001BE418 /* Assets.xcassets */; };
 		5C7479DA21DEE100001BE418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7479D821DEE100001BE418 /* LaunchScreen.storyboard */; };
+		5CCBDA9B21E952D00088401B /* ATM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBDA9A21E952D00088401B /* ATM.swift */; };
 		7288FEAE90A9DD149FF8C8E9 /* Pods_octaATM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6607CE0581A45683B3664FA /* Pods_octaATM.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		5C7479D621DEE100001BE418 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C7479D921DEE100001BE418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C7479DB21DEE100001BE418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CCBDA9A21E952D00088401B /* ATM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATM.swift; sourceTree = "<group>"; };
 		E6607CE0581A45683B3664FA /* Pods_octaATM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_octaATM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -61,14 +63,72 @@
 		5C7479CE21DEE0FF001BE418 /* octaATM */ = {
 			isa = PBXGroup;
 			children = (
-				5C7479CF21DEE0FF001BE418 /* AppDelegate.swift */,
-				5C7479D121DEE0FF001BE418 /* ViewController.swift */,
-				5C7479D321DEE0FF001BE418 /* Main.storyboard */,
-				5C7479D621DEE100001BE418 /* Assets.xcassets */,
-				5C7479D821DEE100001BE418 /* LaunchScreen.storyboard */,
-				5C7479DB21DEE100001BE418 /* Info.plist */,
+				5CCBDA9921E952790088401B /* resources */,
+				5CCBDA9821E952740088401B /* model */,
+				5CCBDA9721E952650088401B /* service */,
+				5CCBDA9621E952550088401B /* dao */,
+				5CCBDA9521E9524B0088401B /* viewcontrollers */,
+				5CCBDA9421E952440088401B /* main */,
+				5CCBDA9321E952330088401B /* view */,
 			);
 			path = octaATM;
+			sourceTree = "<group>";
+		};
+		5CCBDA9321E952330088401B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5C7479D821DEE100001BE418 /* LaunchScreen.storyboard */,
+				5C7479D321DEE0FF001BE418 /* Main.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		5CCBDA9421E952440088401B /* main */ = {
+			isa = PBXGroup;
+			children = (
+				5C7479CF21DEE0FF001BE418 /* AppDelegate.swift */,
+				5C7479DB21DEE100001BE418 /* Info.plist */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		5CCBDA9521E9524B0088401B /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				5C7479D121DEE0FF001BE418 /* ViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		5CCBDA9621E952550088401B /* dao */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = dao;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		5CCBDA9721E952650088401B /* service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = service;
+			sourceTree = "<group>";
+		};
+		5CCBDA9821E952740088401B /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5CCBDA9A21E952D00088401B /* ATM.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5CCBDA9921E952790088401B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C7479D621DEE100001BE418 /* Assets.xcassets */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 		DC7A5D93147B5B20BD0631AF /* Pods */ = {
@@ -99,6 +159,7 @@
 				5C7479C821DEE0FF001BE418 /* Sources */,
 				5C7479C921DEE0FF001BE418 /* Frameworks */,
 				5C7479CA21DEE0FF001BE418 /* Resources */,
+				1534CCB2A33A436CF742D444 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -156,6 +217,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1534CCB2A33A436CF742D444 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-octaATM/Pods-octaATM-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-octaATM/Pods-octaATM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5F7A064D52188A5BD03FDA1F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -185,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CCBDA9B21E952D00088401B /* ATM.swift in Sources */,
 				5C7479D221DEE0FF001BE418 /* ViewController.swift in Sources */,
 				5C7479D021DEE0FF001BE418 /* AppDelegate.swift in Sources */,
 			);
@@ -335,7 +421,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 672WBJ2VTL;
-				INFOPLIST_FILE = octaATM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/octaATM/main/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 672WBJ2VTL;
-				INFOPLIST_FILE = octaATM/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/octaATM/main/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
