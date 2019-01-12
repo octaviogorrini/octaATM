@@ -14,11 +14,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var atm: [ATM] = []
         
         GMSServices.provideAPIKey("AIzaSyBg1W7TRknVIkqBHyy1yG93RpyXLppyOIA")
         let camera = GMSCameraPosition.camera(withLatitude: -34.615281, longitude: -58.381280, zoom: 12)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
+        
+        
+        
         
     }
 

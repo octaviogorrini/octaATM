@@ -13,6 +13,10 @@
 		5C7479D721DEE100001BE418 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C7479D621DEE100001BE418 /* Assets.xcassets */; };
 		5C7479DA21DEE100001BE418 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C7479D821DEE100001BE418 /* LaunchScreen.storyboard */; };
 		5CCBDA9B21E952D00088401B /* ATM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBDA9A21E952D00088401B /* ATM.swift */; };
+		5CCBDA9D21E96E020088401B /* convertcsv.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CCBDA9C21E96E020088401B /* convertcsv.json */; };
+		5CCBDA9F21E96E7A0088401B /* jsonDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBDA9E21E96E7A0088401B /* jsonDAO.swift */; };
+		5CCBDAA121E971460088401B /* jsonDAOManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBDAA021E971460088401B /* jsonDAOManager.swift */; };
+		5CCBDAA321E972C90088401B /* atmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CCBDAA221E972C90088401B /* atmService.swift */; };
 		7288FEAE90A9DD149FF8C8E9 /* Pods_octaATM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6607CE0581A45683B3664FA /* Pods_octaATM.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +31,10 @@
 		5C7479D921DEE100001BE418 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C7479DB21DEE100001BE418 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CCBDA9A21E952D00088401B /* ATM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ATM.swift; sourceTree = "<group>"; };
+		5CCBDA9C21E96E020088401B /* convertcsv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertcsv.json; sourceTree = "<group>"; };
+		5CCBDA9E21E96E7A0088401B /* jsonDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonDAO.swift; sourceTree = "<group>"; };
+		5CCBDAA021E971460088401B /* jsonDAOManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonDAOManager.swift; sourceTree = "<group>"; };
+		5CCBDAA221E972C90088401B /* atmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = atmService.swift; sourceTree = "<group>"; };
 		E6607CE0581A45683B3664FA /* Pods_octaATM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_octaATM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -103,6 +111,8 @@
 		5CCBDA9621E952550088401B /* dao */ = {
 			isa = PBXGroup;
 			children = (
+				5CCBDA9E21E96E7A0088401B /* jsonDAO.swift */,
+				5CCBDAA021E971460088401B /* jsonDAOManager.swift */,
 			);
 			name = dao;
 			path = "New Group";
@@ -111,6 +121,7 @@
 		5CCBDA9721E952650088401B /* service */ = {
 			isa = PBXGroup;
 			children = (
+				5CCBDAA221E972C90088401B /* atmService.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -126,6 +137,7 @@
 		5CCBDA9921E952790088401B /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				5CCBDA9C21E96E020088401B /* convertcsv.json */,
 				5C7479D621DEE100001BE418 /* Assets.xcassets */,
 			);
 			path = resources;
@@ -208,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CCBDA9D21E96E020088401B /* convertcsv.json in Resources */,
 				5C7479DA21DEE100001BE418 /* LaunchScreen.storyboard in Resources */,
 				5C7479D721DEE100001BE418 /* Assets.xcassets in Resources */,
 				5C7479D521DEE0FF001BE418 /* Main.storyboard in Resources */,
@@ -271,7 +284,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CCBDA9B21E952D00088401B /* ATM.swift in Sources */,
+				5CCBDAA121E971460088401B /* jsonDAOManager.swift in Sources */,
 				5C7479D221DEE0FF001BE418 /* ViewController.swift in Sources */,
+				5CCBDA9F21E96E7A0088401B /* jsonDAO.swift in Sources */,
+				5CCBDAA321E972C90088401B /* atmService.swift in Sources */,
 				5C7479D021DEE0FF001BE418 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

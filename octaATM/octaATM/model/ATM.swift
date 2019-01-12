@@ -12,12 +12,12 @@ import Foundation
 
 class ATM {
     
-    private var id: Int
-    private var lat: String
-    private var lng: String
-    private var net: String
-    private var terminals: Int
-    private var district: String
+     var id: Int
+     var lat: String
+     var lng: String
+     var net: String
+     var terminals: Int
+     var district: String
     
     
    public init(id:Int,lat:String,lng:String,net:String,terminals:Int,district:String) {
