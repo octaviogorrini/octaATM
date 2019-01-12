@@ -8,14 +8,14 @@
 
 import Foundation
 
-
-class atmService {
-    
-    
-    func getATMS(completionHandler: (([ATM]) -> Void)){
-        let dao = jsonDAO()
-        dao.readJSONFile(name: "atms") { (atms) in
-            completionHandler(atms)
-        }
-        }
-}
+//
+//class atmService {
+//    
+//    
+//    func getATMS(completionHandler: (([ATM]) -> Void)){
+//        let dao = jsonDAO()
+//        dao.readJSONFile(name: "atms") { (atms) in
+//            completionHandler(atms)
+//        }
+//        }
+//}
